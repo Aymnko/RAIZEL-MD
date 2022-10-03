@@ -203,7 +203,7 @@ mek = mek.messages[0]
 	      case "mediafire" :
 	      case "ميديافاير" : 
 		try {
-		if (!q) return await conn.sendMessage(from , { text: 'أين هو رابط الميديافاير الدي تود تحميله يا بني' }, { quoted: mek } )
+		if (!q) return await conn.sendMessage(from , { text:'أين هو رابط الميديافاير الدي تود تحميله عزيزي' }, { quoted: mek } )
 		if (!q.includes('mediafire.com/file')) return await conn.sendMessage(from , { text: 'need mediafire link' }, { quoted: mek } )
 		const data = await axios.get('https://bobiz-api.herokuapp.com/api/mfire?url=' + q)
 		const file = data.data
@@ -251,8 +251,8 @@ mek = mek.messages[0]
 	      case "تيكتوك" :
 	      case "tiktok" : 
 		try {
-		if (!q) return await conn.sendMessage(from , { text: 'اين رابط تيكتوك' }, { quoted: mek } )
-		if (!q.includes('tiktok')) return await conn.sendMessage(from , { text: 'اين رابط تيكتوك' }, { quoted: mek } )
+		if (!q) return await conn.sendMessage(from , { text: 'اين رابط التيكتوك' }, { quoted: mek } )
+		if (!q.includes('tiktok')) return await conn.sendMessage(from , { text: 'أين رابط تيكتوك' }, { quoted: mek } )
 		const data = await axios.get('https://bobiz-api.herokuapp.com/api/tiktok?url=' + q)
 		const file = data.data
 
@@ -274,7 +274,7 @@ mek = mek.messages[0]
 	      case 'فيسبوك' :
 	      case 'facebook' :
 	      try {
-	     if (!q) return await conn.sendMessage(from , { text: 'need fb link  اين هو رابط فيديو الفيسبوك الذي تريد تحميله' }, { quoted: mek } )      
+	     if (!q) return await conn.sendMessage(from , { text: 'need fb link  أين هو رابط فيديو الفيسبوك الذي تريد تحميله' }, { quoted: mek } )      
 	     const isfb = q.includes('facebook.com')? q.includes('facebook.com') : q.includes('fb.watch')? q.includes('fb.watch') : ''
              if (!isfb) return await conn.sendMessage(from , { text: 'need fb link' }, { quoted: mek } )  
 		const msg = '【⚜️Άήίмέ ⋉⦅💮⦆⋊ ȚŖÏBËŚ⚜️】\n╠  *📥تحميل الفيديوهات من فيسبوك📤*  ╣\n╚═════════════╝\n\n║ اختر الجودة التي تريدها \n\n╚═════════════◈'
